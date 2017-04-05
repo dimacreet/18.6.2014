@@ -199,8 +199,7 @@ public class Test
 
             bars = (List<BarData>)etc.DeSerializeFile(@"D:\BARS\" + asset + "_" + tf);
 
-
-
+            var nggfg = -1;
         }
 
 
@@ -212,7 +211,7 @@ public class Test
         if (bars.Count!=0&&(bars.Last().DateTime.Year < DateTime.Now.Year || bars.Last().DateTime.Month < DateTime.Now.Month ||
             bars.Last().DateTime.Day < DateTime.Now.Day) && update)
         {
-            var aaaa = 0.0;
+           
             var Bars = LoadBars(asset, ticker, tf, bars.Last().DateTime, DateTime.Now);
             var n = Bars.Count;
             bars.Remove(bars.Last());
