@@ -200,6 +200,7 @@ public class Test
             bars = (List<BarData>)etc.DeSerializeFile(@"D:\BARS\" + asset + "_" + tf);
 
             var nggfg = -1;
+            var t = 0;
         }
 
 
